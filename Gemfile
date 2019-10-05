@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'slim', '~> 4.0'
+gem 'jwt', '~> 2.2'
+gem 'dotenv-rails', '~> 2.7'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
