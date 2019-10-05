@@ -9,8 +9,9 @@ module JsonWebToken
     def decode(token)
       raw = JWT.decode(token, ENV['API_TOKEN']).first
       HashWithIndifferentAccess.new(raw)
-    rescue JWT::VerificationError
-      Rails.logger.info('JWT VerificationError')
+      rescue JWT::VerificationError
+        Rails.logger.info('JWT VerificationError')
+        nil
     end
   end
 end
