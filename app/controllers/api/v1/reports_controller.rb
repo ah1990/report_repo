@@ -35,7 +35,7 @@ class Api::V1::ReportsController < Api::V1::ApplicationController
   def download
     send_data @report.file.download,
               filename: @report.file_data['original_filename'],
-              content_type: @report.file_data['content_type'],
+              content_type: @report.file_data['mime_type'],
               disposition: 'download'
   end
 
