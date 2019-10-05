@@ -14,7 +14,7 @@ class Api::V1::SessionsController < Api::V1::ApplicationController
 
     if action.success?
       render json: {
-        auth_token: action.result[:jwt],
+        auth_token: action.result[:jwt]
       }
     else
       render json: { error: action.errors.messages, message: 'Email или пароль неверны' }, status: :unauthorized

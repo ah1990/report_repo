@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       post 'login', to: 'sessions#login'
-      resources :reports, only: %i(index show create update)
+      resources :reports, only: %i(index show create update) do
+        get :download, on: :member
+      end
     end
   end
 

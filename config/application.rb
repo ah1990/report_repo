@@ -30,6 +30,7 @@ module ReportRepo
     # -- all .rb files in that directory are automatically loaded.
 
     config.eager_load_paths << "#{Rails.root}/lib"
+    config.eager_load_paths << "#{Rails.root}/app/interactors/**"
 
     # Don't generate system test files.
     config.generators.system_tests = nil

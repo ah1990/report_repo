@@ -36,6 +36,8 @@ gem 'slim', '~> 4.0'
 gem 'jwt', '~> 2.2'
 gem 'dotenv-rails', '~> 2.7'
 gem 'active_storage_validations'
+gem "interactor-rails", "~> 2.0"
+gem 'active_model_serializers', '~> 0.10'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
