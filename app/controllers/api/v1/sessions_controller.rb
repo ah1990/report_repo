@@ -4,7 +4,8 @@ class Api::V1::SessionsController < Api::V1::ApplicationController
   def login
     unless params[:email] && params[:password]
       render status: :unauthorized,
-             json: { success: false }
+             json: { message: 'Params missing' }
+      return
     end
 
     action = AuthenticateUserService.call(
