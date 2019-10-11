@@ -59,7 +59,7 @@ class ReportsPage extends React.Component {
               <Table.Cell>{report.title}</Table.Cell>
               <Table.Cell>{report.description}</Table.Cell>
               <Table.Cell>
-                <a href="/" onClick={() => this.downloadEmployeeData(report.id, report.file_data.original_filename)}>
+                <a href="javascript:void(null);" onClick={() => this.downloadEmployeeData(report.id, report.file_data.original_filename)}>
                   {report.file_data.original_filename}
                 </a>
               </Table.Cell>

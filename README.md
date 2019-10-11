@@ -1,24 +1,29 @@
-# README
+# ReportRepo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Instalation
 
-Things you may want to cover:
+```
+bundle install
+yarn
+```
 
-* Ruby version
+```
+gem install foreman
+```
 
-* System dependencies
+```
+rake db:setup
+rake db:migrate
+rake db:seed
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Start server
+```
+rails s
+./bin/webpack-dev-server
+```
+or
+```
+foreman start
+```
+User to sign in - email: test@example.com  pass: 1234
